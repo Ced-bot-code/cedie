@@ -26,6 +26,10 @@
     font-family: CG_O;
 }
 
+.f_consolas{
+    font-family:Consolas;
+}
+
 .f_assistant{
     font-family: "Assistant", serif;
     font-optical-sizing: auto;
@@ -47,7 +51,7 @@ html{
     width: 10px;
 }
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background:rgb(192, 175, 175);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -135,7 +139,7 @@ section .title::after{
 
 .navbar .logo a{
     color: #fff;
-    font-size: 24px;
+    font-size: 20px;
     cursor: pointer;
 }
 
@@ -156,7 +160,7 @@ section .title::after{
 .navbar .menu li a{
     display: block;
     color: #fff;
-    font-size: 18px;
+    font-size: 16px;
     margin-left: 25px;
     transition: color 0.3s ease;
 }
@@ -339,6 +343,7 @@ section .title::after{
     padding: 10px 30px;
     margin-top: 20px;
     border-radius: 6px;
+
     border: 2px solid crimson;
     transition: all 0.3s ease-in-out; 
     
@@ -784,7 +789,7 @@ section .title::after{
 
 /* projects section styling */
 .teams .title::after{
-    content: "Projects Done";
+    /* content: "Projects Done"; */
 }
 .teams .carousel .card{
     background: #222;
@@ -813,7 +818,7 @@ section .title::after{
     width: 150px;
     object-fit: cover;
     border-radius: 50%;
-    border: 5px solid crimson;
+    border: 5px solid #3f8cff;
     transition: all 0.3s ease;
 }
 .teams .carousel .card:hover img{
@@ -1286,7 +1291,7 @@ footer .wave#wave4{
                 <div class="home-content f_cg_o">
                     <div class="text-1">Hello, my name is</div>
                     <div class="text-2">Cedie Camomot</div>
-                    <div class="text-3">And I'm <span class="typing"></span></div>
+                    <div class="text-3">And I'm <span class="typing f_consolas"></span></div>
                 </div>
             </div>
         </section>
@@ -1300,7 +1305,7 @@ footer .wave#wave4{
                         <img src="me.jpg" alt="img">
                     </div>
                     <div class="column right f_assistant">
-                        <div class="text">I'm Cedie Camomot and I'm <span class="typing-2"></span></div>
+                        <div class="text">I'm Cedie Camomot and I'm <span class="typing-2 f_consolas"></span></div>
                         <p>A self-taught web developer and designer. Planning and producing real-life, realistic forms. Also a street tutor. Looking for a career in web development and design, well specialize in backend development. Also proficient in most prominent programming or scripting languages such as PHP, MariaDB, and JavaScript, with a strong background in project management and customer relations. Mostly focused on server programming languages such as PHP and developing a functional layouts for convenient user experience.</p>
                     </div>
                 </div>
@@ -1341,7 +1346,7 @@ footer .wave#wave4{
                         <div class="text">Creative skills & experiences.</div>
                         <p>Since of my college days I start accepting CAPSTONE projects and other web projects until now from some students and also other individuals until now as a part of my building of my expertise and also teaching a basic coding for their startup learning. I collaborated also with talented people to create web products for both business, consumer, educational use.
                             <br><br>
-                            I create, and develop a responsive websites for their projects with a nice and convenient user experience fast and fluid build with the best practice and art. Main building blocks of my development is pure PHP and JavaScript for my best quality functions. For Front-End development sometimes I use Bootstrap additional user experience.
+                            I create and develop a responsive websites for their projects with a nice and convenient user experience fast and fluid build with the best practice and art. Main building blocks of my development is pure PHP and JavaScript for my best quality functions. For Front-End development sometimes I use Bootstrap additional user experience.
                             <br><br>
                             
                             Visit my Github <a href="https://github.com/Ced-bot-code" target="_blank" 
@@ -1410,34 +1415,27 @@ footer .wave#wave4{
                 <div class="carousel owl-carousel">
                     <div class="card">
                         <div class="box">
-                            <img src="https://images.pexels.com/photos/1108117/pexels-photo-1108117.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="img">
-                            <div class="text">SJS Hot N' Spicy</div>
-                            <p>SJS hot n spicy is and resturant project . </p>
-                            <a href="https://apps.pfcrestaurant.com.np/" class="project" target="_blank">View Project</a>
+                            <img src="https://cdn-icons-png.flaticon.com/512/7553/7553260.png" alt="img">
+                            <div class="text">Voting system for SSG Election</div>
+                            <p>A web-based application for handling, gathering, and processing for election responses such as votes, ballot records, and student's voters information.</p>
+                            <?php
+                            /*
+                            <!-- <a href="https://apps.pfcrestaurant.com.np/" class="project" target="_blank">View Project</a> -->
+                            */?>
                         </div>
                     </div>
                     <div class="card">
                         <div class="box">
-                            <img src="https://images.pexels.com/photos/1633578/pexels-photo-1633578.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="img">
-                            <div class="text">Buger House</div>
-                            <p>Lorem ipsum dolor sit amet.</p>
-                            <a href="https://ajyotish.com.np/" class="project" target="_blank">View project</a>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxiP34bHzYvZ6GJA2yyLVOUAcNio9VT3XBkQ&s" alt="img">
+                            <div class="text">Lunarlib</div>
+                            <p>A library for app integration for Lunar enthusiasts. (<i>Development ongoing</i>)</p>
                         </div>
                     </div>
                     <div class="card">
                         <div class="box">
-                            <img src="https://images.pexels.com/photos/1804577/pexels-photo-1804577.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="img">
-                            <div class="text">Deep IT Institute</div>
-                            <p>Deep Computer is an institution project .</p>
-                            <a href="https://deepcomputer.edu.np/" class="project" target="_blank">View Project</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="box">
-                            <img src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="img">
-                            <div class="text">NRD Computers</div>
-                            <p>NRD Computer is an eCommerce project.</p>
-                            <a href="https://nrd.com.np/" class="project" target="_blank">View Project</a>
+                            <img src="https://cdn-icons-png.flaticon.com/512/10480/10480648.png" alt="img">
+                            <div class="text">Solarlib</div>
+                            <p>A library for app integration for Solar enthusiasts. (<i>Development ongoing</i>)</p>
                         </div>
                     </div>
                 </div>
