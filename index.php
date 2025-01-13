@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" href="ico.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome :: Cedie Camomot</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
@@ -48,6 +49,7 @@ html{
 ::-webkit-scrollbar-track {
     background: #f1f1f1;
 }
+
 ::-webkit-scrollbar-thumb {
     background: #888;
 }
@@ -60,14 +62,17 @@ html{
 section{
     padding: 100px 0;
 }
+
 .max-width{
     max-width: 1300px;
     padding: 0 80px;
     margin: auto;
 }
+
 .about, .services, .skills, .teams, .contact, footer{
     font-family: 'Assistant', sans-serif;
 }
+
 .about .about-content,
 .services .serv-content,
 .skills .skills-content,
@@ -77,6 +82,7 @@ section{
     align-items: center;
     justify-content: space-between;
 }
+
 section .title{
     position: relative;
     text-align: center;
@@ -84,6 +90,7 @@ section .title{
     margin-bottom: 60px;
     padding-bottom: 20px;
 }
+
 section .title::before{
     content: "";
     position: absolute;
@@ -94,6 +101,7 @@ section .title::before{
     background: #111;
     transform: translateX(-50%);
 }
+
 section .title::after{
     position: absolute;
     bottom: -8px;
@@ -113,31 +121,38 @@ section .title::after{
     padding: 30px 0;
     transition: all 0.3s ease;
 }
+
 .navbar.sticky{
     padding: 15px 0;
     background: #139adb;
 }
+
 .navbar .max-width{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .navbar .logo a{
     color: #fff;
-    font-size: 35px;
+    font-size: 24px;
     cursor: pointer;
 }
+
 .navbar .logo a span{
     color: #0ced1e;
     transition: all 0.3s ease;
 }
+
 .navbar.sticky .logo a span{
     color: #fff;
 }
+
 .navbar .menu li{
     list-style: none;
     display: inline-block;
 }
+
 .navbar .menu li a{
     display: block;
     color: #fff;
@@ -145,10 +160,12 @@ section .title::after{
     margin-left: 25px;
     transition: color 0.3s ease;
 }
+
 .navbar .menu li a:hover{
-    color: crimson;
+    color: #3eed14;
     cursor: pointer;
 }
+
 .navbar.sticky .menu li a:hover{
     color: #fff;
     cursor: pointer;
@@ -161,6 +178,7 @@ section .title::after{
     cursor: pointer;
     display: none;
 }
+
 .scroll-up-btn{
     position: fixed;
     height: 45px;
@@ -180,11 +198,13 @@ section .title::after{
     pointer-events: none;
     transition: all 0.3s ease;
 }
+
 .scroll-up-btn.show{
     bottom: 30px;
     opacity: 1;
     pointer-events: auto;
 }
+
 .scroll-up-btn:hover{
     filter: brightness(90%);
 }
@@ -201,30 +221,36 @@ section .title::after{
     background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
 }
+
 .home .max-width{
   width: 100%;
   display: flex;
 }
+
 .home .max-width .row{
   margin-right: 0;
 }
+
 .home .home-content .text-1{
     font-size: 20px;
 }
+
 .home .home-content .text-2{
     font-size: 75px;
     margin-left: -3px;
 }
+
 .home .home-content .text-3{
     font-size: 40px;
     margin: 5px 0;
 }
+
 .home .home-content .text-3 span{
     color: #00e7ff;
     font-weight: 500;
 }
-.classbox
-{
+
+.classbox{
     position: relative;
     width: 200px;
     height: 90px;
@@ -237,8 +263,8 @@ section .title::after{
     margin-top: 45px;
     cursor: pointer;
 }
-.classbox::before
-{
+
+.classbox::before{
     content: '';
     position: absolute;
     width: 68px;
@@ -248,8 +274,8 @@ section .title::after{
     animation: animate-rotate 4s linear infinite;
    
 }
-.classbox::after
-{
+
+.classbox::after{
     content: '';
     position: absolute;
     inset: 4px;
@@ -257,8 +283,8 @@ section .title::after{
     /* background: crimson; */
     border-radius: 20px;
 }
-@keyframes animate-rotate 
-{
+
+@keyframes animate-rotate {
     0%
     {
         transform: rotate(0deg);
@@ -268,8 +294,8 @@ section .title::after{
         transform: rotate(360deg);
     }
 }
-.classbox a
-{
+
+.classbox a{
     text-decoration: none;
     color: #fff;
     font-size: 2em;
@@ -324,12 +350,16 @@ section .title::after{
 
 } 
 
+.b_class_wh{
+    background: #f1f1f1;
+}
 
 /* services section styling */
 .services, .teams{
     color:#fff;
     background: #111;
 }
+
 .services .title::before,
 .teams .title::before{
     background: #fff;
@@ -337,11 +367,10 @@ section .title::after{
 .services .title::after,
 .teams .title::after{
     background: #111;
-    content: "what i provide";
+    /* content: "what i provide"; */
 }
 
-.container
-{
+.container{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -350,8 +379,8 @@ section .title::after{
     background: #111;
     cursor: pointer;
 }
-.container .box
-{
+
+.container .box{
     position: relative;
     width: 320px;
     height: 400px;
@@ -361,8 +390,8 @@ section .title::after{
     margin: 40px 30px;
     transition: 0.5s;
 }
-.container .box::before
-{
+
+.container .box::before{
     content: '';
     position: absolute;
     top: 0;
@@ -374,8 +403,8 @@ section .title::after{
     transition: 0.5s;
     transform: skewX(15deg);
 }
-.container .box::after
-{
+
+.container .box::after{
     content: '';
     position: absolute;
     top: 0;
@@ -389,45 +418,45 @@ section .title::after{
     filter: blur(30px);
     transition: 0.5s;
 }
+
 .container .box:hover:before,
-.container .box:hover:after
-{
+.container .box:hover:after{
     transform: skewX(0deg);
     left: 20px;
     width: calc(100% - 90px);
 }
+
 .container .box:nth-child(1):before,
-.container .box:nth-child(1):after
-{
+.container .box:nth-child(1):after{
     background: linear-gradient(315deg,#ffbc00,#ff0058);
 }
+
 .container .box:nth-child(2):before,
-.container .box:nth-child(2):after
-{
+.container .box:nth-child(2):after{
     background: linear-gradient(315deg,#03a9f4,#ff0058);
 }
+
 .container .box:nth-child(3):before,
-.container .box:nth-child(3):after
-{
+.container .box:nth-child(3):after{
     background: linear-gradient(315deg,#4dff03,#00d0ff);
 }
+
 .container .box:nth-child(4):before,
-.container .box:nth-child(4):after
-{
+.container .box:nth-child(4):after{
     background: linear-gradient(315deg,#eecda3 , #ef629f);
 }
+
 .container .box:nth-child(5):before,
-.container .box:nth-child(5):after
-{
+.container .box:nth-child(5):after{
     background: linear-gradient(-315deg,#c33764 ,#1d2671);
 }
+
 .container .box:nth-child(6):before,
-.container .box:nth-child(6):after
-{
+.container .box:nth-child(6):after{
     background: linear-gradient(315deg,#36d1dc ,#5b86e5);
 }
-.container .box .content
-{
+
+.container .box .content{
     position: relative;
     left: 0;
     padding: 20px 40px;
@@ -440,26 +469,26 @@ section .title::after{
     color: #fff;
 
 }
-.container .box:hover .content
-{
+
+.container .box:hover .content{
     left: -25px;
     padding:60px 40px ;
 }
-.container .box .content h2
-{
+
+.container .box .content h2{
     font-size: 2em;
     color: #fff;
     margin-bottom: 10px;
 }
-.container .box .content p
-{
+
+.container .box .content p{
     font-size: 1.1em;
     margin-bottom: 10px;
     line-height: 1.4em;
     padding: 12px;
 }
-.container .box .content a
-{
+
+.container .box .content a{
     display: inline-block;
     font-size: 1.1em;
     color: #111;
@@ -470,8 +499,8 @@ section .title::after{
     font-weight: 700;
     margin-top: 5px;
 }
-.container .box span
-{
+
+.container .box span{
     display: block;
     position: absolute;
     top: 0;
@@ -482,8 +511,8 @@ section .title::after{
     pointer-events: none;
   
 }
-.container .box span::before
-{
+
+.container .box span::before{
     content: '';
     position: absolute;
     top: 0;
@@ -498,8 +527,8 @@ section .title::after{
     animation: animate 2s ease-in-out infinite;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 05);
 }
-.container .box:hover #first::before 
-{
+
+.container .box:hover #first::before {
     top: -50px;
     left: 50px;
     width: 100px;
@@ -510,8 +539,7 @@ section .title::after{
     background-position: center;
     filter:invert(100%);
 }
-.container .box:hover #second::before 
-{
+.container .box:hover #second::before {
     top: -50px;
     left: 50px;
     width: 100px;
@@ -522,8 +550,8 @@ section .title::after{
     background-position: center;
     filter:invert(100%);
 }
-.container .box:hover #third::before 
-{
+
+.container .box:hover #third::before {
     top: -50px;
     left: 50px;
     width: 100px;
@@ -534,8 +562,8 @@ section .title::after{
     background-position: center;
     filter:invert(100%);
 }
-.container .box:hover #fourth::before 
-{
+
+.container .box:hover #fourth::before {
     top: -50px;
     left: 50px;
     width: 100px;
@@ -546,8 +574,8 @@ section .title::after{
     background-position: center;
     filter:invert(100%);
 }
-.container .box:hover #fifth::before 
-{
+
+.container .box:hover #fifth::before {
     top: -50px;
     left: 50px;
     width: 100px;
@@ -558,8 +586,8 @@ section .title::after{
     background-position: center;
     filter:invert(100%);
 }
-.container .box:hover #sixth::before 
-{
+
+.container .box:hover #sixth::before {
     top: -50px;
     left: 50px;
     width: 100px;
@@ -570,8 +598,8 @@ section .title::after{
     background-position: center;
     filter:invert(100%);
 }
-.container .box span::after
-{
+
+.container .box span::after{
     content: '';
     position: absolute;
     bottom:  0;
@@ -588,8 +616,7 @@ section .title::after{
     animation-delay: -1s;
 }
 
-.container .box:hover #sixth::after
-{
+.container .box:hover #sixth::after{
     bottom: -50px;
     right: 50px;
     width: 100px;
@@ -599,8 +626,7 @@ section .title::after{
     background-size: 100px;
     background-position: center;
 }
-.container .box:hover #fifth::after
-{
+.container .box:hover #fifth::after{
     bottom: -50px;
     right: 50px;
     width: 100px;
@@ -611,8 +637,7 @@ section .title::after{
     background-position: center;
 }
 
-.container .box:hover #fourth::after
-{
+.container .box:hover #fourth::after{
     bottom: -50px;
     right: 50px;
     width: 100px;
@@ -622,8 +647,8 @@ section .title::after{
     background-size: 100px;
     background-position: center;
 }
-.container .box:hover #third::after
-{
+
+.container .box:hover #third::after{
     bottom: -50px;
     right: 50px;
     width: 100px;
@@ -633,8 +658,8 @@ section .title::after{
     background-size: 100px;
     background-position: center;
 }
-.container .box:hover #second::after
-{
+
+.container .box:hover #second::after{
     bottom: -50px;
     right: 50px;
     width: 100px;
@@ -644,8 +669,8 @@ section .title::after{
     background-size: 100px;
     background-position: center;
 }
-.container .box:hover #first::after
-{
+
+.container .box:hover #first::after{
     bottom: -50px;
     right: 50px;
     width: 100px;
@@ -655,8 +680,8 @@ section .title::after{
     background-size: 100px;
     background-position: center;
 }
-@keyframes animate
-{
+
+@keyframes animate{
     0%,100%
     {
         transform: translateY(10px);
@@ -670,7 +695,7 @@ section .title::after{
 /* skills section styling */
 
 .skills .title::after{
-    content: "what i know";
+    /* content: "what i know"; */
 }
 .skills .skills-content .column{
     width: calc(50% - 30px);
@@ -684,20 +709,11 @@ section .title::after{
     text-align: justify;
 }
 .skills .skills-content .left a{
-    display: inline-block;
-    /* background: crimson; */
-    color: crimson;
-    font-size: 18px;
-    font-weight: 500;
-    padding: 8px 16px;
-    margin-top: 20px;
-    border-radius: 6px;
-    border: 2px solid crimson;
     transition: 0.3s ease-in-out;
 }
 .skills .skills-content .left a:hover{
     color: white;
-    background: crimson;
+    background: #139adb;
 }
 .skills .skills-content .left p #link
 {
@@ -738,25 +754,31 @@ section .title::after{
     height: 100%;
     left: 0;
     top: 0;
-    background: crimson;
+    background: #ff7354;
 }
 .skills-content .right .html::before{
-    width: 90%;
-}
-.skills-content .right .css::before{
     width: 60%;
 }
-.skills-content .right .js::before{
+.skills-content .right .css::before{
     width: 50%;
+}
+.skills-content .right .js::before{
+    width: 80%;
 }
 .skills-content .right .php::before{
-    width: 50%;
-}
-.skills-content .right .mysql::before{
-    width: 85%;
-}
-.skills-content .right .wordpress::before{
     width: 75%;
+}
+
+.skills-content .right .mathjax::before{
+    width:35%;
+}
+
+.skills-content .right .plotly_js::before{
+    width: 25%;
+}
+
+.skills-content .right .mysql::before{
+    width: 40%;
 }
 
 
@@ -866,7 +888,7 @@ input,textarea
 }
 .contact .contact-content .row i{
     font-size: 25px;
-    color: crimson;
+    color: #1489ed;
 }
 .contact .contact-content .info .head{
     font-weight: 500;
@@ -934,11 +956,10 @@ input,textarea
 }
 /* footer section styling */
 
-footer
-{
+footer{
     position: relative;
     width: 100%;
-    background: #3586ff;
+    background: #139adb;
     min-height: 100px;
     padding: 20px 50px;
     display: flex;
@@ -946,8 +967,8 @@ footer
     justify-content: center;
     flex-direction: column;
 }
-footer h2
-{
+
+footer h2{
     margin-bottom: 12px;
     color: #fff;
     font-size: 2em;
@@ -958,8 +979,7 @@ footer h2
     display: flex;
     gap: 50px;
 }
-#media li
-{
+#media li{
     position: relative;
     list-style: none;
     width: 80px;
@@ -972,8 +992,8 @@ footer h2
 
 
 }
-#media  li a
-{
+
+#media  li a{
     position: relative;
     text-decoration: none;
     color: var(--clr);
@@ -982,14 +1002,13 @@ footer h2
     transition: 0.5s ease-in-out;
 
 }
-#media  li:hover
-{
+#media  li:hover{
     z-index: 100000;
     transform: scale(0.75);
     transform: translateY(-10px);
 }
-#media  li::before
-{
+
+#media  li::before{
     content: '';
     position: absolute;
     inset: 30px;
@@ -998,41 +1017,41 @@ footer h2
     0 0 0 22px var(--clr);
     transition: 0.5s;
 }
-#media  li:hover::before
-{
+
+#media  li:hover::before{
   inset: 0px;
 }
-#media  li::after
-{
+
+#media  li::after{
     content: '';
     position: absolute;
     inset: 0;
     background:var(--bg);
     transform: rotate(45deg);
 }
-footer p
-{
+
+footer p{
     color: #fff;
     text-align: center;
     margin-top: 15px;
     font-size: 1.1em;
 }
-footer p a
-{
+
+footer p a{
     text-decoration: none;
     color: black;
     font-size: 1em;
     transition: 0.5s ease-in-out;
 }
-footer p a:hover
-{
+
+footer p a:hover{
     text-decoration: underline;
     color: rgb(5, 1, 1);
     font-size: 1.2em;
     transform: rotateX(10px);
 }
-footer .wave
-{
+
+footer .wave{
     position: absolute;
     top: -100px;
     left: 0;
@@ -1041,36 +1060,36 @@ footer .wave
     background: url("https://ftl.deekshith.eu.org/354310/None?hash=AgADY7");
     background-size: 1000px 100px;
 }
-footer .wave#wave1
-{
+
+footer .wave#wave1{
     z-index: 1000;
     opacity: 1;
     bottom: 0;
     animation: animatewave 4s linear infinite;
 }
-footer .wave#wave2
-{
+
+footer .wave#wave2{
     z-index: 999;
     opacity: 0.5;
     bottom: 10px;
     animation: animatewave_02 4s linear infinite;
 }
-footer .wave#wave3
-{
+
+footer .wave#wave3{
     z-index: 1000;
     opacity: 0.2;
     bottom:15px;
     animation: animatewave 3s linear infinite;
 }
-footer .wave#wave4
-{
+
+footer .wave#wave4{
     z-index: 999;
     opacity: 0.7;
     bottom: 20px;
     animation: animatewave_02 3s linear infinite;
 }
-@keyframes animatewave
-{
+
+@keyframes animatewave{
     0%
     {
         background-position-x: 1000px;
@@ -1080,8 +1099,8 @@ footer .wave#wave4
         background-position-x: 0px;
     }
 }
-@keyframes animatewave_02
-{
+
+@keyframes animatewave_02{
     0%
     {
         background-position-x: 0px;
@@ -1093,8 +1112,7 @@ footer .wave#wave4
 }
 
 /* pr loader design  */
-#preloader
-{
+#preloader{
     background:url("img/e3a.gif") no-repeat center ;
     background-size: 15%;
     filter: invert(100%);
@@ -1274,17 +1292,16 @@ footer .wave#wave4
         </section>
 
         <!-- about section start -->
-        <section class="about" id="about">
+        <section class="about b_class_wh" id="about">
             <div class="max-width">
-                <h2 class="title f_cg_o">About me</h2>
+                <h2 class="title f_assistant">About me</h2>
                 <div class="about-content">
                     <div class="column left">
                         <img src="me.jpg" alt="img">
                     </div>
                     <div class="column right f_assistant">
                         <div class="text">I'm Cedie Camomot and I'm <span class="typing-2"></span></div>
-                        <p> A man with  dynamic and enthusiastic person looking for the job Web Design and Development mostly specializing in front end development. A firm believer in my own abilities, I am also a
-                            team player who thrives in a challenging environment.I am a fresher with new and dynamics project ideas. Well-versed in numerous programming languages including HTML5,PHP,MySQL, JavaScript,Python and strong background in project management and customer relations.  </p>
+                        <p>A self-taught web developer and designer. Planning and producing real-life, realistic forms. Also a street tutor. Looking for a career in web development and design, well specialize in backend development. Also proficient in most prominent programming or scripting languages such as PHP, MariaDB, and JavaScript, with a strong background in project management and customer relations. Mostly focused on server programming languages such as PHP and developing a functional layouts for convenient user experience.</p>
                     </div>
                 </div>
             </div>
@@ -1293,7 +1310,7 @@ footer .wave#wave4
         <!-- services section start -->
          <section class="services" id="services">
             <div class="max-width">
-                <h2 class="title">My services</h2>
+                <h2 class="title f_assistant">My services</h2>
                 <div class="serv-content">
                 </div>
             </div>
@@ -1312,34 +1329,6 @@ footer .wave#wave4
                     <p>In this digital world. I help people in build there business and brand digitally which helps in the many thing like:Brand building, more seling etc.</p>
                 </div>
             </div>
-            <div class="box">
-                <span id="third"></span>
-                <div class="content">
-                    <h2>SEO</h2>
-                    <p>I provide SEO in every business for getting there business in first ,which helps people to make stand there business in google search first.</p>
-                </div>
-            </div>
-            <div class="box">
-                <span id="fourth"></span>
-                <div class="content">
-                    <h2>video Editing</h2>
-                    <p>In this competitive world video editing is necessary in any of the digital platform. Most of the eCommerce website needs video in there which which make there customer attractive.</p>
-                </div>
-            </div>
-            <div class="box">
-                <span id="fifth"></span>
-                <div class="content">
-                    <h2>Digital Marketing</h2>
-                    <p>Digital Marketing is the only tools which helps people to build advertised there business digitally which make people more attracted to there products and there business.</p>
-                </div>
-            </div>
-            <div class="box">
-                <span id="sixth"></span>
-                <div class="content">
-                    <h2>App Development</h2>
-                    <p>Apps helps to those people who are not mostly friendly towards the website.Apps helps people in user interface which make them easier.</p>
-                </div>
-            </div>
         </div>
     </section>
 
@@ -1349,60 +1338,65 @@ footer .wave#wave4
                 <h2 class="title">My skills</h2>
                 <div class="skills-content">
                     <div class="column left">
-                        <div class="text">My creative skills & experiences.</div>
-                        <p>Since beginning my journey as a freelance developer nearly 1 month ago, I’ve done remote work for agencies, consulted for startups, and collaborated with talented people to create web products for both business and consumer use.
+                        <div class="text">Creative skills & experiences.</div>
+                        <p>Since of my college days I start accepting CAPSTONE projects and other web projects until now from some students and also other individuals until now as a part of my building of my expertise and also teaching a basic coding for their startup learning. I collaborated also with talented people to create web products for both business, consumer, educational use.
                             <br><br>
-                            I create successful responsive websites that are fast, easy to use, and built with best practices. The main area of my expertise is front-end development, HTML, CSS, JS, building small and medium web apps, custom plugins, features, animations, and coding interactive layouts.
+                            I create, and develop a responsive websites for their projects with a nice and convenient user experience fast and fluid build with the best practice and art. Main building blocks of my development is pure PHP and JavaScript for my best quality functions. For Front-End development sometimes I use Bootstrap additional user experience.
                             <br><br>
-                            I also have full-stack developer experience with popular open-source CMS like (WordPress, bubble.io and others) .
-                            <br> 
-                            Visit my<a href="https://www.facebook.com/heemal.himalpun" target="-blank" id="link">Facebook</a>for more details<a href="#contact" id="link">contact</a>me.
-
+                            
+                            Visit my Github <a href="https://github.com/Ced-bot-code" target="_blank" 
+                            >Ced-bot-code</a> for more details.
                         </p>
-                        <a href="#contact">Learn more</a>
                     </div>
                     <div class="column right">
                         <div class="bars">
                             <div class="info">
-                                <span>HTML</span>
-                                <span>90%</span>
-                            </div>
-                            <div class="line html"></div>
-                        </div>
-                        <div class="bars">
-                            <div class="info">
-                                <span>CSS</span>
-                                <span>60%</span>
-                            </div>
-                            <div class="line css"></div>
-                        </div>
-                        <div class="bars">
-                            <div class="info">
                                 <span>JavaScript</span>
-                                <span>50%</span>
+                                <span>80%</span>
                             </div>
-                             <div class="line js"></div>
+                            <div class="line js"></div>
                         </div>
-                    <div class="bars">
+                        <div class="bars">
                             <div class="info">
-                                <span>Adobe Photoshop</span>
-                                <span>50%</span>
+                                <span>PHP</span>
+                                <span>75%</span>
                             </div>
                             <div class="line php"></div>
                         </div>
                         <div class="bars">
                             <div class="info">
-                                <span>Corel Draw</span>
-                                <span>85%</span>
+                                <span>HTML</span>
+                                <span>60%</span>
                             </div>
-                            <div class="line mysql"></div>
+                             <div class="line html"></div>
                         </div>
                         <div class="bars">
                             <div class="info">
-                                <span>WordPress</span>
-                                <span>75%</span>
+                                <span>CSS</span>
+                                <span>50%</span>
                             </div>
-                            <div class="line wordpress"></div>
+                             <div class="line css"></div>
+                        </div>
+                        <div class="bars">
+                            <div class="info">
+                                <span>MariaDB</span>
+                                <span>40%</span>
+                            </div>
+                             <div class="line mysql"></div>
+                        </div>
+                        <div class="bars">
+                            <div class="info">
+                                <span>MathJax</span>
+                                <span>35%</span>
+                            </div>
+                             <div class="line mathjax"></div>
+                        </div>
+                        <div class="bars">
+                            <div class="info">
+                                <span>Plotly.JS</span>
+                                <span>25%</span>
+                            </div>
+                             <div class="line plotly_js"></div>
                         </div>
                     </div>
                 </div>
@@ -1471,6 +1465,17 @@ footer .wave#wave4
                                 <div class="info">
                                     <div class="head">Address</div>
                                     <div class="sub-title">Tugas, Bolinawan, Carcar City, Cebu</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <i class="fa-brands fa-facebook-f"></i>
+                                <div class="info">
+                                    <div class="head">Facebook</div>
+                                    <div class="sub-title">
+                                        <a href="https://www.facebook.com/proof.newton.2024/">
+                                            Proof Newton
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                             <div class="row">
