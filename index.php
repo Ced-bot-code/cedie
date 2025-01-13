@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome :: Cedie Camomot</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://www.suncalc.org/scripts/somotools.min.js?v=1.4"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
@@ -93,6 +94,13 @@ section .title{
     font-size: 40px;
     margin-bottom: 60px;
     padding-bottom: 20px;
+}
+
+section .title_bottom{
+    position: relative;
+    text-align: center;
+    margin: 60px 0 0;
+    /* padding-bottom: 20px; */
 }
 
 section .title::before{
@@ -1439,6 +1447,10 @@ footer .wave#wave4{
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="title_bottom">
+                LST: 0h0m0s | Moon age: 0d 0h 0m 0s | Sun forcast: Rise at 5:23:44 AM Noon will be at 12:00:00 PM Set at 5:33:29 PM<br>
+
             </div>
         </section>
 
