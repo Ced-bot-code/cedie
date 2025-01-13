@@ -14,15 +14,29 @@
     <style>
 /*  import google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap');
+
+@font-face {
+    font-family: CG_O;
+    src: url(cgor45w.woff);
+}
+
+.f_gc_o{
+    font-family: CG_O;
+}
+
+.f_assistant{
+    font-family: "Assistant", serif;
+    font-optical-sizing: auto;
+    font-style: normal; 
+}
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-/*     font-family: consolas; */
-    
+    font-family: CG_O;
 }
 html{
     scroll-behavior: smooth;
@@ -1237,7 +1251,7 @@ footer .wave#wave4
     <!-- pre loader  -->
      <div id="preloader"></div>
         <nav class="navbar">
-            <div class="max-width">
+            <div class="max-width f_cg_o">
                 <div class="logo"><a href="#">Hem<span>Bdr.</span></a></div>
                 <ul class="menu">
                     <li><a href="#home" class="menu-btn">Home</a></li>

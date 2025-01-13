@@ -14,15 +14,28 @@
     <style>
 /*  import google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap');
+
+@font-face {
+    font-family: CG_O;
+    src: url(cgor45w.woff);
+}
+
+.f_cg_o{
+    font-family: CG_O;
+}
+
+.f_assistant{
+    font-family: "Assistant", serif;
+    font-optical-sizing: auto;
+    font-style: normal; 
+}
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-/*     font-family: consolas; */
-    
 }
 html{
     scroll-behavior: smooth;
@@ -53,7 +66,7 @@ section{
     margin: auto;
 }
 .about, .services, .skills, .teams, .contact, footer{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Assistant', sans-serif;
 }
 .about .about-content,
 .services .serv-content,
@@ -68,10 +81,8 @@ section .title{
     position: relative;
     text-align: center;
     font-size: 40px;
-    font-weight: 500;
     margin-bottom: 60px;
     padding-bottom: 20px;
-    font-family: 'Ubuntu', sans-serif;
 }
 section .title::before{
     content: "";
@@ -100,12 +111,11 @@ section .title::after{
     width: 100%;
     z-index: 999;
     padding: 30px 0;
-    font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease;
 }
 .navbar.sticky{
     padding: 15px 0;
-    background: crimson;
+    background: #139adb;
 }
 .navbar .max-width{
     display: flex;
@@ -115,11 +125,10 @@ section .title::after{
 .navbar .logo a{
     color: #fff;
     font-size: 35px;
-    font-weight: 600;
     cursor: pointer;
 }
 .navbar .logo a span{
-    color: crimson;
+    color: #0ced1e;
     transition: all 0.3s ease;
 }
 .navbar.sticky .logo a span{
@@ -133,7 +142,6 @@ section .title::after{
     display: block;
     color: #fff;
     font-size: 18px;
-    font-weight: 500;
     margin-left: 25px;
     transition: color 0.3s ease;
 }
@@ -185,7 +193,7 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    background: url("https://images.pexels.com/photos/4360449/pexels-photo-4360449.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2") no-repeat center;
+    background: url("codes.jpg") no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -205,7 +213,6 @@ section .title::after{
 }
 .home .home-content .text-2{
     font-size: 75px;
-    font-weight: 600;
     margin-left: -3px;
 }
 .home .home-content .text-3{
@@ -213,7 +220,7 @@ section .title::after{
     margin: 5px 0;
 }
 .home .home-content .text-3 span{
-    color: crimson;
+    color: #00e7ff;
     font-weight: 500;
 }
 .classbox
@@ -272,7 +279,7 @@ section .title::after{
 
 /* about section styling */
 .about .title::after{
-    content: "who i am";
+    /* content: ""; */
 }
 .about .about-content .left{
     width: 45%;
@@ -833,7 +840,7 @@ input,textarea
     caret-color: red;
 }
 .contact .title::after{
-    content: "get in touch";
+    /* content: ""; */
 }
 .contact .contact-content .column{
     width: calc(50% - 30px);
@@ -1238,8 +1245,10 @@ footer .wave#wave4
      <div id="preloader"></div>
         <nav class="navbar">
             <div class="max-width">
-                <div class="logo"><a href="#">Hem<span>Bdr.</span></a></div>
-                <ul class="menu">
+                <div class="logo f_cg_o">
+                    <a href="#"><span>Cedie</span> Camomot</a>
+                </div>
+                <ul class="menu f_assistant">
                     <li><a href="#home" class="menu-btn">Home</a></li>
                     <li><a href="#about" class="menu-btn">About</a></li>
                     <li><a href="#services" class="menu-btn">Services</a></li>
@@ -1256,13 +1265,10 @@ footer .wave#wave4
         <!-- home section start -->
         <section class="home" id="home">
             <div class="max-width">
-                <div class="home-content">
+                <div class="home-content f_cg_o">
                     <div class="text-1">Hello, my name is</div>
-                    <div class="text-2">Hem Bahadur Pun</div>
-                    <div class="text-3">And I'm a <span class="typing"></span></div>
-                    <div class="classbox">
-                    <a href="#">Hire me</a>
-                </div>
+                    <div class="text-2">Cedie Camomot</div>
+                    <div class="text-3">And I'm <span class="typing"></span></div>
                 </div>
             </div>
         </section>
@@ -1270,16 +1276,15 @@ footer .wave#wave4
         <!-- about section start -->
         <section class="about" id="about">
             <div class="max-width">
-                <h2 class="title">About me</h2>
+                <h2 class="title f_cg_o">About me</h2>
                 <div class="about-content">
                     <div class="column left">
-                        <img src="https://images.pexels.com/photos/2050979/pexels-photo-2050979.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="img">
+                        <img src="me.jpg" alt="img">
                     </div>
-                    <div class="column right">
-                        <div class="text">I'm Hem Bdr. Pun and I'm a <span class="typing-2"></span></div>
-                        <p> And I am 17 years  young boy with  dynamic and enthusiastic person looking for the job Web Design and Development mostly specializing in front end development. A firm believer in my own abilities, I am also a
+                    <div class="column right f_assistant">
+                        <div class="text">I'm Cedie Camomot and I'm <span class="typing-2"></span></div>
+                        <p> A man with  dynamic and enthusiastic person looking for the job Web Design and Development mostly specializing in front end development. A firm believer in my own abilities, I am also a
                             team player who thrives in a challenging environment.I am a fresher with new and dynamics project ideas. Well-versed in numerous programming languages including HTML5,PHP,MySQL, JavaScript,Python and strong background in project management and customer relations.  </p>
-                        <a href="cv/sample.pdf" download="cv/sample.pdf">Download CV</a>
                     </div>
                 </div>
             </div>
@@ -1447,7 +1452,7 @@ footer .wave#wave4
 
         <!-- contact section start -->
         <section class="contact" id="contact">
-            <div class="max-width">
+            <div class="max-width f_assistant">
                 <h2 class="title">Contact me</h2>
                 <div class="contact-content">
                     <div class="column left">
@@ -1458,46 +1463,41 @@ footer .wave#wave4
                                 <i class="fas fa-user"></i>
                                 <div class="info">
                                     <div class="head">Name</div>
-                                    <div class="sub-title">Hem Bahadur Pun</div>
+                                    <div class="sub-title">Cedie V. Camomot</div>
                                 </div>
                             </div>
                             <div class="row">
                                 <i class="fas fa-map-marker-alt"></i>
                                 <div class="info">
                                     <div class="head">Address</div>
-                                    <div class="sub-title">Pokhara, Nepal</div>
+                                    <div class="sub-title">Tugas, Bolinawan, Carcar City, Cebu</div>
                                 </div>
                             </div>
                             <div class="row">
                                 <i class="fas fa-envelope"></i>
                                 <div class="info">
                                     <div class="head">Email</div>
-                                    <div class="sub-title">mail@gmail.com</div>
+                                    <div class="sub-title"><a href="mailto:cedcamomot@gmail.com">cedcamomot@gmail.com</a></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                            <i class="fa fa-mobile"></i>
+                                <div class="info">
+                                    <div class="head">Mobile</div>
+                                    <div class="sub-title"><a href="tel:+639106036207">(+63) 0910 603 6207</a></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <i class="fa-brands fa-github"></i>
+                                <div class="info">
+                                    <div class="head">Github</div>
+                                    <div class="sub-title"><a href="https://github.com/Ced-bot-code">Ced-bot-code</a></div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="column right">
-                        <div class="text">Message me</div>
-                        <form action="#">
-                            <div class="fields">
-                                <div class="field name">
-                                    <input type="text" placeholder="Name" required>
-                                </div>
-                                <div class="field email">
-                                    <input type="email" placeholder="Email" required>
-                                </div>
-                            </div>
-                            <div class="field">
-                                <input type="text" placeholder="Subject" required>
-                            </div>
-                            <div class="field textarea">
-                                <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
-                            </div>
-                            <div class="button-area">
-                                <button type="submit">Send message</button>
-                            </div>
-                        </form>
+                        
                     </div>
                 </div>
             </div>
@@ -1505,39 +1505,15 @@ footer .wave#wave4
 
         <!-- footer section start -->
     
-        <footer>
+        <footer class="f_assistant">
             <div class="waves">
                 <div class="wave" id="wave1"></div>
                 <div class="wave" id="wave2"></div>
                 <div class="wave" id="wave3"></div>
                 <div class="wave" id="wave4"></div>
             </div>
-            <h2><span class="typing-3"></span></h2>
-            <ul id="media">
-                <!-- facebook  -->
-                <li style="--clr:#0011ff;">
-                    <a href="https://www.facebook.com/heemal.himalpun" target="-blank"><i class="fa-brands fa-facebook-f"></i>
-                    </a>
-                </li>
-                <!-- youtube  -->
-                <li style="--clr:#ff0000;">
-                    <a href="https://www.youtube.com/channel/UC1ryLxQzkWeFtply1F1kxwA " target="-blank"><i class="fa-brands fa-youtube"></i></a>
-                </li>
-        <!-- Twitter  -->
-                 <li style="--clr:#4506f0;">
-                    <a href="https://twitter.com/HimalPu94127169" target="-blank"><i class="fa-brands fa-twitter"></i></a>
-                </li>
-                <!-- Instagram  -->
-                <li style="--clr:#e73f0c;">
-                    <a href="https://www.instagram.com/smokuspoon" target="-blank"><i class="fa-brands fa-instagram"></i></a>
-                </li>
-                <!-- whatsapp  -->
-                <li style="--clr:#04c214;">
-                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                </li>
-            </ul>
 
-            <p>&copy; 2021 <a href="https://hembdrpun.com.np/" target="_blank">Hem</a> | All Rights Reserved |</p>
+            <p>&copy; <?= date("Y");?> Cedie Camomot. All rights reserved.</p>
         </footer>
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -1600,20 +1576,14 @@ footer .wave#wave4
 
             // typing text animation script
             var typed = new Typed(".typing", {
-                strings: ["Front end developer","Fresher","Technician", "Blogger", "Designer", "Freelancer","Manager"],
-                typeSpeed: 100,
-                backSpeed: 60,
-                loop: true
-            });
-            var typed = new Typed(".typing-3", {
-                strings: ["Connect with me on :)"],
+                strings: ["a web developer","a Front-End developer", "a freelancer","a musician", "an astronomer"],
                 typeSpeed: 100,
                 backSpeed: 60,
                 loop: true
             });
 
             var typed = new Typed(".typing-2", {
-                strings: ["Front end developer","Fresher" ,"Technician", "Blogger", "Designer", "Freelancer","Manager"],
+                strings: ["a web developer","a Front-End developer", "a freelancer","a musician", "an astronomer"],
                 typeSpeed: 100,
                 backSpeed: 60,
                 loop: true
