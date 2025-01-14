@@ -456,7 +456,6 @@
             });
         });
 
-
         function cl(){
             qw = [xt.coords.latitude, xt.coords.longitude]
             re = [ celestialBody("Sun", {lat: qw[0], long: qw[1]}), celestialBody("Moon", {lat: qw[0], long: qw[1]}), celestialBodyLive("Moon", {lat: qw[0], long: qw[1]})]
@@ -465,10 +464,6 @@
             $('#d_53463463747').html(`Moonrise: ${Number.isInteger(re[1].Rise*1) ? re[1].Rise.toLocaleTimeString() : re[1].Rise.toLocaleTimeString()} Moonset : ${Number.isInteger(re[1].Set*1) ? re[1].Set.toLocaleTimeString() : re[1].Set.toLocaleTimeString()}`);
             $('#d_555343465').attr("title", `Full moon date: ${re[2].nextFullMoon}`);
         }
-        
-        cl();
-        
-        
         
         function disp(){
             qw = [xt.coords.latitude, xt.coords.longitude]
@@ -517,6 +512,7 @@
                 Sunrise: ${re[0].Rise.toLocaleTimeString()} Noon: ${re[0].Transit.toLocaleTimeString()} Sunset : ${re[0].Set.       toLocaleTimeString()} | Moonrise: ${re[1].Rise.toLocaleTimeString()} Moonset : ${re[1].Set.toLocaleTimeString()}    Moon age: ${timer(re[2].Age)} 
             `);
         } */
+        cl();
     </script>
 </body>
 </html>
