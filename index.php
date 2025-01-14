@@ -459,7 +459,6 @@
 
         function cl(){
             qw = [xt.coords.latitude, xt.coords.longitude]
-
             re = [ celestialBody("Sun", {lat: qw[0], long: qw[1]}), celestialBody("Moon", {lat: qw[0], long: qw[1]}), celestialBodyLive("Moon", {lat: qw[0], long: qw[1]})]
 
             $('#d_2342343252').html(`Sunrise: ${re[0].Rise.toLocaleTimeString()}<br> Noon: ${re[0].Transit.toLocaleTimeString()}<br> Sunset : ${re[0].Set.toLocaleTimeString()}`);
