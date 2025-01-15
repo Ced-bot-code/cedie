@@ -147,15 +147,15 @@
             <div class="box">
                 <span id="first"> </span>
                 <div class="content">
-                    <h2>Designer</h2>
-                    <p>I am a Fresher web designer. I have make different design with different ideas. I today's rat race new fresher have more mind blowing ideas with more expoloring ideas.</p>
+                    <h2>Tutorian</h2>
+                    <p>I teach coding to students as a form of my sideline work. Mathematics also I teach basic Algebra for coding because it is essential for creating and developing a method for web developent.</p>
                 </div>
             </div>
             <div class="box">
                 <span id="second"></span>
                 <div class="content">
-                    <h2>Development</h2>
-                    <p>In this digital world. I help people in build there business and brand digitally which helps in the many thing like:Brand building, more seling etc.</p>
+                    <h2>Web projects</h2>
+                    <p>I'm also accepting web project for my clients for their compliance and othesr.</p>
                 </div>
             </div>
         </div>
