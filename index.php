@@ -14,49 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="m_style.css">
-    <script>
-
-        function celestialBody(p, c){
-            td = new Date();
-            tz = -td.getTimezoneOffset()/60;
-            W = ''
-            switch(p){
-                case "Sun":
-                        W = SoMo.getSunDayInfo(new Date(), c.lat, c.long, 36E5*tz/6E4, "de")
-                    break;
-                    case "Moon":
-                        W = SoMo.getMoonDayInfo(new Date(), c.lat, c.long, 36E5*tz/6E4, "de")
-                    break;
-            }
-            return W
-        }
-
-        function celestialBodyLive(p, c){
-            td = new Date();
-            tz = -td.getTimezoneOffset()/60;
-            W = ''
-            switch(p){
-                case "Sun":
-                        W = SoMo.getSunSecInfo(new Date(), c.lat, c.long, 36E5*tz/6E4, "de")
-                    break;
-                    case "Moon":
-                        W = SoMo.getMoonSecInfo(new Date(), c.lat, c.long, 36E5*tz/6E4, "de")
-                    break;
-            }
-            return W
-        }
-
-        var xt = '', SoMo = SoMo;
-
-        getData = async (f)=>{
-            let qv = await fetch(f)
-
-            displayInfo(await qv.json());
-
-        }
-        
-    
-    </script>
+    <script src="ced.js"></script>
     <script>
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(showPosition);
@@ -70,21 +28,9 @@
           xt = position;
         }
         
-        /* ge = setInterval(() => {
+        //ge = setInterval(() => {
             getData("https://ipinfo.io/json")
-        }, 1000); */
-      
-        function frac(x){
-            return x - Math.floor(x)
-        }
-
-        function timer(x){
-            A = Math.floor(x)
-            B = 24*frac(x);
-            C = 60*frac(B);
-            D = 60*frac(C);
-            return `${A}d${(Math.floor(B)).toString().padStart(2, 0)}h${(Math.floor(C)).toString().padStart(2, 0)}m${(Math.floor(D)).toString().padStart(2, 0)}s`
-        }
+        //}, 1000);
     </script>
 </head>
 <body>
@@ -155,7 +101,7 @@
                 <span id="second"></span>
                 <div class="content">
                     <h2>Web projects</h2>
-                    <p>I'm also accepting web project for my clients for their compliance and othesr.</p>
+                    <p>I'm also accepting web project for my clients for their compliance and others.</p>
                 </div>
             </div>
         </div>
@@ -387,6 +333,7 @@
                 // sticky navbar on scroll script
                 if(this.scrollY > 20){
                     $('.navbar').addClass("sticky");
+                    
                 }else{
                     $('.navbar').removeClass("sticky");
                 }
@@ -474,9 +421,9 @@
         }
         
         
-        var rrt = setInterval(()=>{
+        // var rrt = setInterval(()=>{
             disp();
-        },1000);
+        // },1000);
         
         if(xt == ''){
             clearInterval(rrt);
@@ -491,28 +438,40 @@
             `);
         }
         
-        /* function displayInfo(k){
+        function displayInfo(k){
+        
+            // if(k.status == 429){
+                /* qw = [xt.coords.latitude, xt.coords.longitude]
+                clearInterval(getData); */
+            // }
+            // else{
+                qw = k.loc.split(",");
+            // }
+            
+            re = [ celestialBody("Sun", {lat: qw[0], long: qw[1]}), celestialBody("Moon", {lat: qw[0], long: qw[1]}),       celestialBodyLive("Moon", {lat: qw[0], long: qw[1]})]
         
         
-            if(k.status == 429){
-                qw = [xt.coords.latitude, xt.coords.longitude]
-                clearInterval(getData);
+            re = [ celestialBody("Sun", {lat: qw[0], long: qw[1]}), celestialBody("Moon", {lat: qw[0], long: qw[1]}),       celestialBodyLive("Moon", {lat: qw[0], long: qw[1]})]
+        
+            $('#d_tt34634').html(`
+                <span title="You are in ${k.city}, ${k.region} now" style="cursor: help">    Sunrise: ${re[0].Rise.toLocaleTimeString()} Noon: ${re[0].Transit.toLocaleTimeString()} Sunset : ${re[0].Set.toLocaleTimeString()} | Moonrise: ${Number.isInteger(re[1].Rise) ? re[1].Rise.toLocaleTimeString() : re[1].Rise} Moonset : ${Number.isInteger(re[1].Set*1) ? re[1].Set.toLocaleTimeString() : re[1].Set}</span>
+            `);
+
+            if(re[0].Rise <= new Date() || new Date() >= re[0].Set){
+                $(".teams").css({"backgroundColor": "#456b8b"})
             }
             else{
-                qw = k.loc.split(",");
+                $(".teams").css({"backgroundColor": "black"})
             }
-            
-            re = [ celestialBody("Sun", {lat: qw[0], long: qw[1]}), celestialBody("Moon", {lat: qw[0], long: qw[1]}),       celestialBodyLive("Moon", {lat: qw[0], long: qw[1]})]
-        
-        
-            re = [ celestialBody("Sun", {lat: qw[0], long: qw[1]}), celestialBody("Moon", {lat: qw[0], long: qw[1]}),       celestialBodyLive("Moon", {lat: qw[0], long: qw[1]})]
-        
-            
-            $('#d_tt34634').html(`
-                Sunrise: ${re[0].Rise.toLocaleTimeString()} Noon: ${re[0].Transit.toLocaleTimeString()} Sunset : ${re[0].Set.       toLocaleTimeString()} | Moonrise: ${re[1].Rise.toLocaleTimeString()} Moonset : ${re[1].Set.toLocaleTimeString()}    Moon age: ${timer(re[2].Age)} 
-            `);
-        } */
-        cl();
+            /* $('#d_tt34634').attr({
+                "title", `You are in ${k.city}`
+            }) */
+
+            /* $('#d_2342343252').html(`Sunrise: ${re[0].Rise.toLocaleTimeString()}<br> Noon: ${re[0].Transit.toLocaleTimeString()}<br> Sunset : ${re[0].Set.toLocaleTimeString()}`);
+            $('#d_53463463747').html(`Moonrise: ${Number.isInteger(re[1].Rise*1) ? re[1].Rise.toLocaleTimeString() : re[1].Rise.toLocaleTimeString()}<br> Moonset :${Number.isInteger(re[1].Set*1) ? re[1].Set.toLocaleTimeString() : re[1].Set.toLocaleTimeString()}`);
+            $('#d_555343465').attr("title", `Full moon date: ${re[2].nextFullMoon}`); */
+        }
+        // cl();
     </script>
 </body>
 </html>
