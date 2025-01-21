@@ -188,10 +188,10 @@
                             <img src="https://cdn-icons-png.flaticon.com/512/7553/7553260.png" alt="img">
                             <div class="text">Voting system for SSG Election</div>
                             <p>A web-based application for handling, gathering, and processing for election responses such as votes, ballot records, and student's voters information.</p>
-                            <?php
-                            /*
+                      
+                    
                             <!-- <a href="https://apps.pfcrestaurant.com.np/" class="project" target="_blank">View Project</a> -->
-                            */?>
+                            
                         </div>
                     </div>
                     <div class="card">
@@ -302,7 +302,7 @@
                 <div class="wave" id="wave4"></div>
             </div>
 
-            <p>&copy; <?= date("Y");?> Cedie Camomot. All rights reserved.</p>
+            <p>&copy; 2025 Cedie Camomot. All rights reserved.</p>
         </footer>
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
