@@ -456,7 +456,7 @@
             re = [ celestialBody("Sun", {lat: qw[0], long: qw[1]}), celestialBody("Moon", {lat: qw[0], long: qw[1]}),       celestialBodyLive("Moon", {lat: qw[0], long: qw[1]})]
         
             $('#d_tt34634').html(`
-                <span title="You are in ${k.city}, ${k.region} now" style="cursor: help">    Sunrise: ${re[0].Rise.toLocaleTimeString()} Noon: ${re[0].Transit.toLocaleTimeString()} Sunset : ${re[0].Set.toLocaleTimeString()} | Moonrise: ${Number.isInteger(re[1].Rise) ? re[1].Rise.toLocaleTimeString() : re[1].Rise} Moonset : ${Number.isInteger(re[1].Set*1) ? re[1].Set.toLocaleTimeString() : re[1].Set}</span>
+                <span title="You are in ${k.city}, ${k.region} now" style="cursor: help">    Sunrise: ${re[0].Rise.toLocaleTimeString()} Noon: ${re[0].Transit.toLocaleTimeString()} Sunset : ${re[0].Set.toLocaleTimeString()} | Moonrise: ${Number.isInteger(re[1].Rise*1) ? re[1].Rise.toLocaleTimeString() : re[1].Rise} Moonset : ${Number.isInteger(re[1].Set*1) ? re[1].Set.toLocaleTimeString() : re[1].Set}</span>
             `);
 
             if(re[0].Rise <= new Date() || new Date() >= re[0].Set){
