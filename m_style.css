@@ -1110,7 +1110,6 @@ footer .wave#wave4{
 
 /* pr loader design  */
 #preloader{
-    background:url("img/e3a.gif") no-repeat center ;
     background-size: 15%;
     filter: invert(100%);
     background-color: #fff;
