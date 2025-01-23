@@ -37,6 +37,103 @@
         p{
             font-size:0.88em;
         }
+
+
+        /* Font */
+
+
+/* Design */
+
+
+.main{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.btn {
+  color: #ffffff;
+  padding: 0.8rem;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
+  }
+}
+
+.card {
+  background-color: white;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card_content {
+  padding: 1rem;
+  background: #427ec4;
+  height: 100%;
+}
+
+.card_title {
+  color: #ffffff;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0px;
+}
+
+.card_text {
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;    
+  font-weight: 400;
+}
     </style>
 </head>
 <body>
@@ -96,7 +193,31 @@
                 </div>
             </div>
         <div class="container">
-            <div class="box">
+            <div class="main">
+                <ul class="cards">
+                  <li class="cards_item">
+                    <div class="card">
+                      <div class="card_image"><img src="tutorials.jpg"></div>
+                      <div class="card_content">
+                        <h2 class="card_title">Tutorials</h2>
+                        <p class="card_text">I teach coding to students as a form of my sideline work. Mathematics also I teach basic Algebra for coding because it is essential for creating and developing a method for web developent.</p>
+                        <!-- <button class="btn card_btn">Read More</button> -->
+                      </div>
+                    </div>
+                  </li>
+                  <li class="cards_item">
+                    <div class="card">
+                      <div class="card_image"><img src="webpropj.jpg"></div>
+                      <div class="card_content">
+                        <h2 class="card_title">Web projects</h2>
+                        <p class="card_text">I'm also accepting web project from my clients. It is essential for their business and educational purposes.</p>
+                        <!-- <button class="btn card_btn">Read More</button> -->
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            <!-- <div class="box">
                 <span id="first"> </span>
                 <div class="content">
                     <h2>Tutorian</h2>
@@ -108,7 +229,7 @@
                 <div class="content">
                     <h2>Web projects</h2>
                     <p>I'm also accepting web project for my clients for their compliance and others.</p>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -119,8 +240,8 @@
                 <h2 class="title">My skills</h2>
                 <div class="skills-content">
                     <div class="column left">
-                        <div class="text">Creative skills & experiences.</div>
-                        <p>Since of my college days I start accepting CAPSTONE projects and other web projects until now from some students and also other individuals until now as a part of my building of my expertise and also teaching a basic coding for their startup learning. I collaborated also with talented people to create web products for both business, consumer, educational use.
+                        <div class="text">Skills and expertise.</div>
+                        <p>Since of my college days I start accepting web projects and tutorials until now from some students and also other individuals as a part of my building of my expertise and also teaching a basic coding for their startup learning. I collaborated also with talented people to create web products for business, consumer related, and educational use.
                             <br><br>
                             I create and develop a responsive websites for their projects with a nice and convenient user experience fast and fluid build with the best practice and art. Main building blocks of my development is pure PHP and JavaScript for my best quality functions. For Front-End development sometimes I use Bootstrap additional user experience.
                             <br><br>
@@ -230,7 +351,6 @@
             </div>
             <div class="title_bottom">
                 <span id="d_tt34634"></span><br>
-
             </div>
         </section>
 
@@ -240,16 +360,16 @@
                 <h2 class="title">Contact me</h2>
                 <div class="contact-content">
                     <div class="column left">
-                        <div class="text">Get in Touch</div>
-                        <p>If you are interested in working together? Please fill out the form aside with some info about your project and I will get back to you as soon as I can. Please allow a couple days for me to respond.</p>
+                        <div class="text">Are you interested?</div>
+                        <p>If you are interested? Don't hesitate to contact this medium below and I'll be respond and get in touch with me.</p>
                         <div class="icons">
-                            <div class="row">
+                            <!-- <div class="row">
                                 <i class="fas fa-user"></i>
                                 <div class="info">
                                     <div class="head">Name</div>
                                     <div class="sub-title">Cedie V. Camomot</div>
                                 </div>
-                            </div>
+                            </div> -->
                             <div class="row">
                                 <i class="fas fa-map-marker-alt"></i>
                                 <div class="info">
