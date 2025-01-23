@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="m_style.css">
     <script src="ced.js"></script>
     <script>
+        const tt = new Date();
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(showPosition);
         }
@@ -422,10 +423,10 @@
         
         
         // var rrt = setInterval(()=>{
-            disp();
+           // disp();
         // },1000);
         
-        if(xt == ''){
+        /* if(xt == ''){
             clearInterval(rrt);
             $('#d_tt34634').html(`
                 Please allow geolocation API for best forcast
@@ -436,9 +437,11 @@
             $('#d_2342343252').html(`
                 Please allow geolocation API for best forcast
             `);
-        }
+        } */
 
-        document.getElementById("d_53473746487").innerHTML = new Date().getFullYear()
+    
+
+        document.getElementById("d_53473746487").innerHTML = tt.getFullYear()
         
         function displayInfo(k){
         
@@ -459,12 +462,15 @@
                 <span title="You are in ${k.city}, ${k.region} now" style="cursor: help">    Sunrise: ${re[0].Rise.toLocaleTimeString()} Noon: ${re[0].Transit.toLocaleTimeString()} Sunset : ${re[0].Set.toLocaleTimeString()} | Moonrise: ${Number.isInteger(re[1].Rise*1) ? re[1].Rise.toLocaleTimeString() : re[1].Rise} Moonset : ${Number.isInteger(re[1].Set*1) ? re[1].Set.toLocaleTimeString() : re[1].Set}</span>
             `);
 
-            if(re[0].Rise <= new Date() || new Date() >= re[0].Set){
+            if(re[0].Rise*1 <= tt*1 && tt*1 <= re[0].Set*1){
+                console.log("HOY")
                 $(".teams").css({"backgroundColor": "#456b8b"})
             }
             else{
                 $(".teams").css({"backgroundColor": "black"})
             }
+
+
             /* $('#d_tt34634').attr({
                 "title", `You are in ${k.city}`
             }) */
