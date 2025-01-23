@@ -16,10 +16,10 @@ function celestialBody(p, c){
     W = ''
     switch(p){
         case "Sun":
-                W = SoMo.getSunDayInfo(new Date(), c.lat, c.long, 36E5*tz/6E4, "de")
+                W = SoMo.getSunDayInfo(new Date(), c.lat, c.long, 36E5*tz/6E4, "en")
             break;
             case "Moon":
-                W = SoMo.getMoonDayInfo(new Date(), c.lat, c.long, 36E5*tz/6E4, "de")
+                W = SoMo.getMoonDayInfo(new Date(), c.lat, c.long, 36E5*tz/6E4, "en")
             break;
     }
     return W
@@ -31,10 +31,10 @@ function celestialBodyLive(p, c){
     W = ''
     switch(p){
         case "Sun":
-                W = SoMo.getSunSecInfo(new Date(), c.lat, c.long, 36E5*tz/6E4, "de")
+                W = SoMo.getSunSecInfo(new Date(), c.lat, c.long, 36E5*tz/6E4, "en")
             break;
             case "Moon":
-                W = SoMo.getMoonSecInfo(new Date(), c.lat, c.long, 36E5*tz/6E4, "de")
+                W = SoMo.getMoonSecInfo(new Date(), c.lat, c.long, 36E5*tz/6E4, "en")
             break;
     }
     return W
