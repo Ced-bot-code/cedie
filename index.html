@@ -432,7 +432,6 @@ img {
         </footer>
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-        <script src="script.js"></script>
         <!-- scroll bar js  -->
         <script type="text/javascript">
             var preogressbar = document .getElementById("preogressbar")
@@ -578,13 +577,12 @@ img {
                 qw = k.loc.split(",");
             // }
             
-            re = [ celestialBody("Sun", {lat: qw[0], long: qw[1]}), celestialBody("Moon", {lat: qw[0], long: qw[1]}),       celestialBodyLive("Moon", {lat: qw[0], long: qw[1]})]
+    
+            re = [ celestialBody("Sun", {lat: qw[0], long: qw[1]}), celestialBody("Moon", {lat: qw[0], long: qw[1]}),       celestialBodyLive("Moon", {lat: qw[0], long: qw[1]}), celestialBodyLive("Sun", {lat: qw[0], long: qw[1]})]
         
-        
-            re = [ celestialBody("Sun", {lat: qw[0], long: qw[1]}), celestialBody("Moon", {lat: qw[0], long: qw[1]}),       celestialBodyLive("Moon", {lat: qw[0], long: qw[1]})]
-        
+            
             $('#d_tt34634').html(`
-                <p><span title="You are in ${k.city}, ${k.region} now" style="cursor: help">    Sunrise: ${re[0].Rise.toLocaleTimeString()} Noon: ${re[0].Transit.toLocaleTimeString()} Sunset : ${re[0].Set.toLocaleTimeString()} &nbsp;|&nbsp; Moonrise: ${Number.isInteger(re[1].Rise*1) ? re[1].Rise.toLocaleTimeString() : re[1].Rise} Moonset : ${Number.isInteger(re[1].Set*1) ? re[1].Set.toLocaleTimeString() : re[1].Set}</span></p>
+                <p style="word-spacing:3px"><span style="cursor:help" title="Daylight duration: ${re[0].DaylightDuration}, Altitude: ${re[3].Altitude_Deg >= 0.01 ? re[3].Altitude_Deg.toFixed(2)+"°" : "Below horizon"}">Sunrise: ${re[0].Rise.toLocaleTimeString()} Noon: ${re[0].Transit.toLocaleTimeString()} Sunset : ${re[0].Set.toLocaleTimeString()}</span> &nbsp;|&nbsp; <span style="cursor:help" title="Moon age: ${timer(re[2].Age)}, Complete duration: ${timer(re[2].LunationDuration)} Altitude: ${re[2].Altitude_Deg >= 0.01 ? re[2].Altitude_Deg.toFixed(2)+"°" : "Below horizon"} Current distance: ${re[2].Distance.toFixed(2)} km, Phase: ${re[2].PhaseDescription}, Next Full Moon: ${re[2].nextFullMoon}">Moonrise: ${Number.isInteger(re[1].Rise*1) ? re[1].Rise.toLocaleTimeString() : re[1].Rise} Cul/Noon: ${Number.isInteger(re[1].Transit*1) ? re[1].Transit.toLocaleTimeString() : "Does not pass at the meridian" } Moonset: ${Number.isInteger(re[1].Set*1) ? re[1].Set.toLocaleTimeString() : re[1].Set}</span><br><a href="https://www.google.com/maps/@?api=1&map_action=map&center=${qw[0]}%2C${qw[1]}&zoom=15&basemap=satellite" title="Note: This location is based on your computer/smartphone IP address" target="_black">You are in ${k.city}, ${k.region} now</a></p>
             `);
 
             if(re[0].Rise*1 <= tt*1 && tt*1 <= re[0].Set*1){
@@ -604,6 +602,10 @@ img {
             $('#d_555343465').attr("title", `Full moon date: ${re[2].nextFullMoon}`); */
         }
         // cl();
+    </script>
+    <script>
+        console.log(`Copyright (C) ${tt.getFullYear()} Cedie Camomot. All rights reserved.`);
+        console.log("Warning: Do not copy or enter any codes that you do not understand.");
     </script>
 </body>
 </html>
