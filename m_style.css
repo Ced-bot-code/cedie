@@ -1223,6 +1223,9 @@ footer .wave#wave4{
 }
 
 @media (max-width: 500px) {
+    section .title_bottom{
+        padding: 5px;
+    }
     .home .home-content .text-2{
         font-size: 50px;
     }
