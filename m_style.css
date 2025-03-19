@@ -154,6 +154,8 @@ section .title::after{
     color: #fff;
     font-size: 16px;
     margin: 0 25px 0 25px;
+    width: 100%;
+    text-align: center;
     transition: color 0.2s ease;
 }
 
