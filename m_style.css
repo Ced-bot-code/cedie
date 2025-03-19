@@ -153,7 +153,7 @@ section .title::after{
     display: block;
     color: #fff;
     font-size: 16px;
-    margin-left: 25px;
+    margin: 0 25px 0 25px;
     transition: color 0.2s ease;
 }
 
