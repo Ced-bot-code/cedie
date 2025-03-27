@@ -1227,7 +1227,7 @@ footer .wave#wave4{
         padding: 5px;
     }
     .home .home-content .text-2{
-        font-size: 50px;
+        font-size: clamp(2.1rem, 3.5vw, 6rem);
     }
     .home .home-content .text-3{
         font-size: 27px;
