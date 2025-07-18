@@ -603,6 +603,15 @@ img {
             $('#d_555343465').attr("title", `Full moon date: ${re[2].nextFullMoon}`); */
         }
         // cl();
+        $(function() {
+            var i = 0;
+            var colors = ["#FF0000", "#FFFF00", "#00FF00", "#00FFFF", "#0000FF"];
+            setInterval(function() {
+                var color = colors[i = i++ > 4 ? 0 : i];
+                $("meta[name='theme-color']").attr('content', color);
+                $("#x").text(color);
+            }, 500);
+        });
     </script>
     <script>
         console.log(`Copyright (C) ${tt.getFullYear()} Cedie Camomot. All rights reserved.`);
