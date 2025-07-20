@@ -49,6 +49,9 @@ body::before {
   left: 50%;
   text-align: center;
   transform: translate(-50%, -50%) rotate(calc(-1 * var(--deg)));
+  box-shadow: 11px 9px 5px -4px rgba(0,0,0,0.19);
+-webkit-box-shadow: 11px 9px 5px -4px rgba(0,0,0,0.19);
+-moz-box-shadow: 11px 9px 5px -4px rgba(0,0,0,0.19);
 }
 
 .board::before {
