@@ -5,7 +5,7 @@
     <link rel="shortcut icon" href="ico.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#139adb">
-    <title>Site is under development :: Cedie Camomot</title>
+    <title class="d3r">Site is under construction :: Cedie Camomot</title>
    <link rel="stylesheet" href="styles.css">
    <style>
     @font-face {
@@ -33,6 +33,12 @@
             `<h1>El sitio está en construcción</h1><span>¡Volveré y me levantaré pronto!</span>`,
             `<h1 class="fo-jp-k">サイトは現在工事中です</h1><span class="fo-jp">またすぐに戻ってきます！</span>`
         ]
+        LANG1 = [
+            "Site is under construction :: Cedie Camomot",
+            "Die Website befindet sich im Aufbau :: Cedie Camomot",
+            "Sitio en construcción :: Cedie Camomot",
+            "サイトは現在建設中です :: Cedie Camomot"
+        ]
    </script>
 </head>
 <body>
@@ -52,11 +58,12 @@
         </div>
     </div>
     <script>
-        se_lf = [document.getElementsByClassName('sel'), document.getElementsByClassName('d3r')[0]];
+        se_lf = [document.getElementsByClassName('sel'), document.getElementsByClassName('d3r')];
 
         for(let i=0; i<se_lf[0].length; i++){
             se_lf[0][i].onclick=(e)=>{
-                se_lf[1].innerHTML = LANG[i];
+                se_lf[1][1].innerHTML = LANG[i];
+                se_lf[1][0].innerHTML = LANG1[i];
             }
         }
     </script>
